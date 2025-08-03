@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Web Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Interactive Background Canvas -->
+    <canvas id="background-canvas"></canvas>
+    
+    <div class="container">
+        <div class="header">
+            <h1>TIC-TAC-TOE WEB APPLICATION</h1>
+        </div>
+
+        <div class="game-container">
+            <div class="game-options">
+                <div class="mode-selector">
+                    <button id="pvp-btn" class="active">Player vs Player</button>
+                    <button id="pvc-btn">Player vs Computer</button>
+                </div>
+                <div class="score-board">
+                    <div class="score">
+                        <span>X (Player 1)</span>
+                        <span id="score-x">0</span>
+                    </div>
+                    <div class="score">
+                        <span>O (Player 2/CPU)</span>
+                        <span id="score-o">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="status" id="status">Player X's turn</div>
+            
+            <div class="board" id="board">
+                <div class="cell" data-cell-index="0"></div>
+                <div class="cell" data-cell-index="1"></div>
+                <div class="cell" data-cell-index="2"></div>
+                <div class="cell" data-cell-index="3"></div>
+                <div class="cell" data-cell-index="4"></div>
+                <div class="cell" data-cell-index="5"></div>
+                <div class="cell" data-cell-index="6"></div>
+                <div class="cell" data-cell-index="7"></div>
+                <div class="cell" data-cell-index="8"></div>
+            </div>
+            
+            <div class="controls">
+                <button id="reset-btn">Reset Game</button>
+                <button id="new-game-btn">New Game</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+    <script src="background.js"></script>
+</body>
+</html>
